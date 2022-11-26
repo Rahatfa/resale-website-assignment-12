@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../../images/iphone.jpg'
+import Categories from '../Categories/Categories';
 
 const Slider = () => {
     return (
@@ -74,12 +75,13 @@ const Slider = () => {
                         </div>
                     </div>
                 
-                <div>
-                    <h1 className="text-5xl font-bold">Box Office News!</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <div className='text-center'>
+                    <h1 className="text-5xl font-bold">Recycled Phones Categories</h1>
+                        <Categories></Categories>
                     <button className="btn btn-primary">Get Started</button>
                 </div>
             </div>
+            
         </div>
     
     );

@@ -1,0 +1,30 @@
+[
+    {
+        "brand": "samsung",
+        "model": "galaxy 21 ultra",
+        "img": "",
+        "location": "dhaka",
+        "orginal price":90000,
+        "resale price": 30000,
+        "years of use": 3,
+        "posted date": "21-10-2021",
+        "seller name": "rajib"
+        
+        
+        },
+        
+         {
+        "brand": "samsung",
+        "model": "galaxy note 22 ultra",
+        "img": "",
+        "location": "dhaka",
+        "orginal price":140000,
+        "resale price": 90000,
+        "years of use": 2,
+        "posted date": "21-10-2022",
+        "seller name": "raj"
+        
+        
+        }
+
+    ]

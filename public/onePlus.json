@@ -1,0 +1,29 @@
+[
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 10 pro",
+        "img": "",
+        "location": "dhaka",
+        "orginal price":60000,
+        "resale price": 40000,
+        "years of use": 1,
+        "posted date": "21-10-2022",
+        "seller name": "rob"
+        
+        
+        },
+        
+        {
+        "brand": "OnePlus",
+        "model": "OnePlus 10T",
+        "img": "",
+        "location": "dhaka",
+        "orginal price":90000,
+        "resale price": 60000,
+        "years of use": 0.3,
+        "posted date": "21-10-2022",
+        "seller name": "rajendro"
+        
+        
+        }
+]
