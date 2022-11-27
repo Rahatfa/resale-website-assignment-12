@@ -2,11 +2,19 @@
     {
         "name":"Sanny",
         "img": "https://i.ibb.co/M6vt61H/guy-1.jpg",
-        "feedback":"One of the best shop in online. Reasonable price with best quality used mobile phone"
+        "feedback":"One of the best shop in online. Reasonable price with best quality used mobile phone",
+        "time":"3 month"
         },
         {
         "name":"Saber",
         "img": "https://i.ibb.co/TLtF1tc/guy-2.png",
-        "feedback":"You can trust them. They will give you best mobile within your budget"
+        "feedback":"You can trust them. They will give you best mobile within your budget",
+        "time":"5 month"
+        },
+        {
+        "name":"Sadek",
+        "img": "https://i.ibb.co/xL3w10r/guy-3.png",
+        "feedback":"You can trust them. They will give you best mobile within your budget",
+        "time":"7 month"
         }
 ]

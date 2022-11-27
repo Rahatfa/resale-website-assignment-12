@@ -12,7 +12,7 @@ const Reviews = () => {
     return (
         <div>
             <h2 className=' font-bold text-black-400 hover:text-sky-400 '>Reviews</h2>
-            <div className='grid mt-5 gap-9 grid-cols-1 lg:grid-cols-2'>
+            <div className='grid mt-5 gap-9 grid-cols-1 lg:grid-cols-3'>
                 {
                     reviews.map(review => <div className="card bg-primary text-primary-content">
                         <div className="card-body">
@@ -25,6 +25,7 @@ const Reviews = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-lg"> {review.name}</h4>
+                                    <p>Time: {review.time} ago</p>
                                 </div>
                             </div>
                         </div>
