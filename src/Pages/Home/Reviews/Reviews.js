@@ -11,7 +11,7 @@ const Reviews = () => {
     }, [])
     return (
         <div>
-            <h2 className='text-black-400 hover:text-sky-400'>Reviews</h2>
+            <h2 className=' font-bold text-black-400 hover:text-sky-400 '>Reviews</h2>
             <div className='grid mt-5 gap-9 grid-cols-1 lg:grid-cols-2'>
                 {
                     reviews.map(review => <div className="card bg-primary text-primary-content">

@@ -9,9 +9,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal p-0"> 
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/'>Blog</Link></li>
-                    <li><Link to='/'>Log In</Link></li>
+                        <li className='text-black-600 hover:text-sky-400'><Link to='/'>Home</Link></li>
+                        <li className='text-black-600 hover:text-sky-400'><Link to='/'>Blog</Link></li>
+                        <li className='text-black-600 hover:text-sky-400'><Link to='/'>Log In</Link></li>
                     </ul>
                 </div>
         </div>
