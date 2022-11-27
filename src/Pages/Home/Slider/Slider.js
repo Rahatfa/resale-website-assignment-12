@@ -14,7 +14,7 @@ const Slider = () => {
                                 <div className="hero-content text-center text-neutral-content">
                                         <div className="max-w-md">
                                         <h1 className="mb-5 text-5xl font-bold">Welcome To Mobile World</h1>
-                                        <p className="mb-5">H.</p>
+                                        <p className="mb-5"></p>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ const Slider = () => {
                 <div className='text-center'>
                     <h1 className="text-5xl font-bold">Recycled Phones Categories</h1>
                         <Categories></Categories>
-                    <button className="btn btn-primary">Get Started</button>
+                    {/* <button className="btn btn-primary">Get Started</button> */}
                 </div>
             </div>
             

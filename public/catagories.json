@@ -1,15 +1,21 @@
 [
     {
- "brand": "samsung",
+ "key": 1,
+ "brand": "Samsung",
+ "slogan": "Together for tomorrow",
  "img": "https://i.ibb.co/V3rQ0j5/samsung.webp"
  },
  {
+    "key": 2,
  "brand": "Apple",
+ "slogan": "Think Different",
  "img": "https://i.ibb.co/QvbrbGx/apple.png" 
  },
  
  {
+    "key": 3,
  "brand": "OnePlus",
+ "slogan": "Never Settle",
  "img": "https://i.ibb.co/f0tzz3R/onePlus.webp"
  
 
