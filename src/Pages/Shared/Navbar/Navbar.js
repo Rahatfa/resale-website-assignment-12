@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../contexts/AuthProvider';
 
 const Navbar = () => {
+    const {user, logOut} = useContext(AuthContext)
+
+    const handleLogOut = ()=>{
+        logOut()
+        .then (() =>{})
+        .catch(err => console.log(err))
+    }
     return (
         <div className="navbar bg-base-100">
                 <div className="flex-1">
@@ -11,7 +19,14 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal p-0"> 
                         <li className='text-black-600 hover:text-sky-400'><Link to='/'>Home</Link></li>
                         <li className='text-black-600 hover:text-sky-400'><Link to='/blog'>Blog</Link></li>
-                        <li className='text-black-600 hover:text-sky-400'><Link to='/login'>Log In</Link></li>
+                        {user?.uid ? 
+                            <>
+                                <li><Link to='/dashboard'>Dashboard</Link></li>
+                                <li className='text-black-600 hover:text-sky-400'><button onClick={handleLogOut}>Sign Out</button></li>
+                            
+                            
+                            </>
+                            : <li className='text-black-600 hover:text-sky-400'><Link to='/login'>Log In</Link></li>}
                     </ul>
                 </div>
         </div>
