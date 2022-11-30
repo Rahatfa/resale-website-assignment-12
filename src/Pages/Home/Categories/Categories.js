@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Categories = () => {
 
     const [categories, setCategories] = useState([]);
     useEffect(() =>{
-        fetch('http://localhost:5000/catagories')
+        fetch('https://mobile-world-server.vercel.app/catagories')
         .then(res => res.json())
         .then(data => setCategories(data))
     }, [])
@@ -26,7 +27,7 @@ const Categories = () => {
                           <h2 className="card-title">{category.brand}</h2>
                           <p>{category.slogan}</p>
                           <div className="card-actions">
-                            <button className="btn btn-primary">Explore</button>
+                            <button className="btn btn-primary"><Link to='/Samsungs'>Explore</Link></button>
                           </div>
                         </div>
                     </div>)
