@@ -6,3 +6,9 @@ project's features and functionalities:
 4- i use google login as a social login system. 
 5- i use vercel to deploy website.
 6- use react toaster.
+
+
+live site link:  https://mobile-world-7e179.web.app
+
+adminEmail: rahat@gmail.com
+adminPassword: 12345678
