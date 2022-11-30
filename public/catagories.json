@@ -1,24 +1,100 @@
 [
-    {
- "key": 1,
- "brand": "Samsung",
- "slogan": "Together for tomorrow",
- "img": "https://i.ibb.co/V3rQ0j5/samsung.webp"
- },
- {
-    "key": 2,
- "brand": "Apple",
- "slogan": "Think Different",
- "img": "https://i.ibb.co/QvbrbGx/apple.png" 
- },
- 
- {
-    "key": 3,
- "brand": "OnePlus",
- "slogan": "Never Settle",
- "img": "https://i.ibb.co/f0tzz3R/onePlus.webp"
- 
+   {
+"key": 1,
+"brand": "Samsung",
+"slogan": "Together for tomorrow",
+"img": "https://i.ibb.co/V3rQ0j5/samsung.webp",
+"products":[
+  {
+                "model": "galaxy 21 ultra",
+                "img": "",
+                "location": "dhaka",
+                "originalPrice":90000,
+                "resalePrice": 30000,
+                "yearsOfUse": 3,
+                "postedDate": "21-10-2021",
+                "sellerName": "Rajib"
+  },
+  {
+                "model": "galaxy note 22 ultra",
+                "img": "",
+                "location": "dhaka",
+                "originalPrice":140000,
+                "resalePrice": 90000,
+                "yearsOfUse": 2,
+                "postedDate": 2,
+                "sellerName": "Raj"
+     
 
- }
- 
- ]
+
+  }
+   ]
+},
+
+{
+   "key": 2,
+"brand": "Apple",
+"slogan": "Think Different",
+"img": "https://i.ibb.co/QvbrbGx/apple.png" ,
+"products": [
+      {
+       "model": "Iphone 14 pro",
+            "img": "",
+            "location": "dhaka",
+            "originalPrice":150000,
+            "resalePrice": 100000,
+            "yearsOfUse": 1,
+            "postedDate": "21-09-2022",
+            "sellerName": "Rajan"
+      },
+
+      {
+            "model": "Iphone 13 pro",
+            "img": "",
+            "location": "dhaka",
+            "originalPrice":130000,
+            "resalePrice": 80000,
+            "yearsOfUse": 1,
+            "postedDate": "24-11-2022",
+            "sellerName": "Robin"
+         
+      }
+
+   ]
+},
+
+{
+   "key": 3,
+"brand": "OnePlus",
+"slogan": "Never Settle",
+"img": "https://i.ibb.co/f0tzz3R/onePlus.webp",
+"products": [
+      {
+         "model": "OnePlus 10 pro",
+         "img": "",
+         "location": "dhaka",
+         "originalPrice":60000,
+         "resalePrice": 40000,
+         "yearsOfUse": 1,
+         "postedDate": "21-10-2022",
+         "sellerName": "Rob"
+      },
+      {
+     "model": "OnePlus 10T",
+      "img": "",
+     "location": "dhaka",
+     "originalPrice":90000,
+     "resalePrice": 60000,
+     "yearsOfUse": 0.3,	
+     "postedDate": "21-10-2022",
+     "sellerName": "Rajendro"
+
+      }
+
+
+]
+
+
+}
+
+]

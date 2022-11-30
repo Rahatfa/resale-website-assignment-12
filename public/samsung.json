@@ -2,29 +2,25 @@
     {
         "brand": "samsung",
         "model": "galaxy 21 ultra",
-        "img": "",
+        "img": "https://i.ibb.co/Sr54pS1/samsung-21-ultra.webp",
         "location": "dhaka",
-        "orginal price":90000,
-        "resale price": 30000,
-        "years of use": 3,
-        "posted date": "21-10-2021",
-        "seller name": "rajib"
-        
-        
+        "orginalPrice":90000,
+        "resalePrice": 30000,
+        "yearsOfUse": 3,
+        "postedDate": "21-10-2021",
+        "sellerName": "Rajib"
         },
         
          {
         "brand": "samsung",
         "model": "galaxy note 22 ultra",
-        "img": "",
+        "img": "https://i.ibb.co/28Psch9/galaxy-note-22-ultra.jpg",
         "location": "dhaka",
-        "orginal price":140000,
-        "resale price": 90000,
-        "years of use": 2,
-        "posted date": "21-10-2022",
-        "seller name": "raj"
-        
-        
+        "orginalPrice":140000,
+        "resalePrice": 90000,
+        "yearsOfUse": 2,
+        "postedDate": "21-10-2022",
+        "sellerName": "Raj"  
         }
 
     ]

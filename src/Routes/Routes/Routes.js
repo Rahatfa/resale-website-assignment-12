@@ -4,7 +4,9 @@ import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
 import Dashboard from "../../Pages/Dashboard/Dashboard";
 import Error from "../../Pages/Error/Error";
+import Categories from "../../Pages/Home/Categories/Categories";
 import Home from "../../Pages/Home/Home/Home";
+import Samsungs from "../../Pages/Home/Samsung/Samsungs";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
             {
                 path:'/blog',
                 element:<Blog></Blog>
+            },
+            {
+                path:'/Categories/:id',
+                element:<Categories></Categories>
+            },
+            {
+                path:'/Samsungs',
+                element: <Samsungs></Samsungs>
             }
         ]
         

@@ -1,3 +1,4 @@
+import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -11,6 +12,10 @@ const Login = () => {
     const [loginError, setLoginError] = useState('');
     const location  = useLocation();
     const navigate = useNavigate();
+    const {providerLogin} = useContext(AuthContext)
+
+
+    const googleProvider = new GoogleAuthProvider()
 
     const from = location.state?.from?.pathname || '/';
 
@@ -29,7 +34,16 @@ const Login = () => {
             setLoginError(error.message)
         });
     }
-    
+
+    const handleGoogleSignIn = () =>{
+        providerLogin(googleProvider)
+        .then(result => {
+            const user = result.user;
+            console.log(user)
+        })
+        .catch(error => console.error (error))
+
+    }    
 
     return (
         <div className="hero bg-base-200">
@@ -63,7 +77,7 @@ const Login = () => {
                     </form>
                     <p className='p-1'>New to Mobile World <Link className='text-primary' to='/signup'>Create New Account</Link></p>
                     <div className="divider w-50"></div>
-                    <button className='btn btn-outline w-2/3 mb-2 mx-14'>Google Sign In</button>
+                    <button onClick={handleGoogleSignIn} className='btn btn-outline w-2/3 mb-2 mx-14'>Google Sign In</button>
                 </div>
             </div>
         </div>
