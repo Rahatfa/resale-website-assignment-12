@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Categories = () => {
-
     const [categories, setCategories] = useState([]);
     useEffect(() =>{
         fetch('https://mobile-world-server.vercel.app/catagories')
@@ -24,10 +23,10 @@ const Categories = () => {
                           <img src={category.img} alt="name" className="rounded-xl" />
                         </figure>
                         <div className="card-body items-center text-center">
-                          <h2 className="card-title">{category.brand}</h2>
+                          <h2 className="card-title">{category.name}</h2>
                           <p>{category.slogan}</p>
                           <div className="card-actions">
-                            <button className="btn btn-primary"><Link to='/Samsungs'>Explore</Link></button>
+                            <button className="btn btn-primary"><Link to={`/Categories/${category.name}`}>Explore</Link></button>
                           </div>
                         </div>
                     </div>)

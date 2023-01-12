@@ -4,12 +4,14 @@ import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
 import Dashboard from "../../Pages/Dashboard/Dashboard";
 import Error from "../../Pages/Error/Error";
+import CategoriesDetails from '../../../src/Pages/Home/Categories/CategoriesDetails';
 import Categories from "../../Pages/Home/Categories/Categories";
 import Home from "../../Pages/Home/Home/Home";
 import Samsungs from "../../Pages/Home/Samsung/Samsungs";
 import Login from "../../Pages/Login/Login";
 import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import Spinner from "../../Pages/Shared/Spinner/Spinner";
 
 
 
@@ -36,13 +38,38 @@ const router = createBrowserRouter([
                 element:<Blog></Blog>
             },
             {
-                path:'/Categories/:id',
+                path:'/Categories/',
                 element:<Categories></Categories>
+                
             },
             {
-                path:'/Samsungs',
-                element: <PrivateRoute><Samsungs></Samsungs></PrivateRoute>
-            }
+                path:'/spinner',
+                element:<Spinner></Spinner>
+                
+            },
+            // {
+            //     path:'/Categories/:name',
+            //     element:<Categories></Categories>,
+            //     loader: ({params}) => fetch(`http://localhost:5000/catagories/${params.name}`)
+                
+            // },
+            {
+                path:'/Categories/:name',
+                element:<PrivateRoute><CategoriesDetails></CategoriesDetails></PrivateRoute>,
+                loader: ({params}) => fetch(`http://localhost:5000/Catagories/${params.name}`)
+                
+            },
+            // {
+            //     path:'/categories/:name',
+            //     element: <Samsungs></Samsungs>,
+            //     loader:({params}) => fetch(`http://localhost:5000/categories/${params.name}`)
+                
+            // },
+            // {
+            //     path:'/catagories/',
+            //     element: <PrivateRoute><Samsungs></Samsungs></PrivateRoute>,
+                
+            // }
         ]
         
     },
